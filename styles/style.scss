@@ -77,5 +77,22 @@ body {
         }
       }
     }
+    section.about-me {
+      background-color: rgba(171, 250, 171, 0.8);
+      padding-top: 3rem;
+      display: flex;
+      justify-content: center;
+      section.description {
+        width: 50%;
+      }
+      div.progress-bar-area {
+        p {
+          margin-bottom: 0;
+        }
+        div.progress {
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
 }
