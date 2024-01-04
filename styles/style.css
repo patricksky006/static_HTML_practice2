@@ -85,5 +85,67 @@ body main section.about-me div.progress-bar-area p {
 body main section.about-me div.progress-bar-area div.progress {
   margin-bottom: 1rem;
 }
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+body main section.resume section.table {
+  flex: 5 1 500px;
+  padding: 2rem;
+}
+body main section.resume section.table table {
+  --bs-table-bg: none;
+  border-collapse: collapse;
+}
+body main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: rgb(54, 212, 138);
+}
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+body main section.resume section.picture {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 2rem;
+  position: relative;
+}
+body main section.resume section.picture img {
+  width: 70%;
+}
+body main section.resume section.picture div.greenRect {
+  width: 25vw;
+  height: 70vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 2rem;
+  left: 8rem;
+  z-index: -1;
+}
+body main section.resume section.picture div.greenRect2 {
+  width: 50vw;
+  height: 20vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 8rem;
+  right: 1rem;
+  z-index: -1;
+}
+body main section.resume section.picture div.greenRect3 {
+  width: 25vw;
+  height: 50vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  transform: rotate(0.8turn);
+  z-index: -1;
+}
 
 /*# sourceMappingURL=style.css.map */

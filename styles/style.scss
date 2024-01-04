@@ -94,5 +94,69 @@ body {
         }
       }
     }
+    section.resume {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      section.table {
+        flex: 5 1 500px;
+        // border: 2px solid red;
+        padding: 2rem;
+        table {
+          --bs-table-bg: none;
+          border-collapse: collapse;
+          tr {
+            border-bottom: 2px solid gray;
+            transition: all 0.2s ease;
+            &:hover {
+              background-color: $themecolor;
+            }
+            td {
+              padding: 1rem;
+            }
+          }
+        }
+      }
+      section.picture {
+        flex: 1 1 500px;
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding-bottom: 2rem;
+        position: relative;
+        img {
+          width: 70%;
+        }
+        div.greenRect {
+          width: 25vw;
+          height: 70vh;
+          border: 10px solid rgb(195, 255, 200);
+          position: absolute;
+          top: 2rem;
+          left: 8rem;
+          z-index: -1;
+        }
+        div.greenRect2 {
+          width: 50vw;
+          height: 20vh;
+          border: 10px solid rgb(195, 255, 200);
+          position: absolute;
+          top: 8rem;
+          right: 1rem;
+          z-index: -1;
+        }
+        div.greenRect3 {
+          width: 25vw;
+          height: 50vh;
+          border: 10px solid rgb(195, 255, 200);
+          position: absolute;
+          top: 8rem;
+          left: 8rem;
+          transform: rotate(0.8turn);
+          z-index: -1;
+        }
+      }
+    }
   }
 }
