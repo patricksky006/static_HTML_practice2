@@ -18,6 +18,9 @@ h6 {
 body {
   nav {
     background-color: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
     ul {
       display: flex;
       li {
@@ -99,7 +102,7 @@ body {
       flex-wrap: wrap;
       padding: 2rem;
       section.table {
-        flex: 5 1 500px;
+        flex: 5 0 500px;
         // border: 2px solid red;
         padding: 2rem;
         table {
@@ -155,6 +158,51 @@ body {
           left: 8rem;
           transform: rotate(0.8turn);
           z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    main {
+      section.main-area {
+        div.info {
+          text-align: center;
+        }
+        div.img-area {
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+      }
+      section.about-me {
+        section.description {
+          width: 80%;
+        }
+      }
+      section.resume {
+        overflow-x: auto;
+        section.picture {
+          div.greenRect,
+          div.greenRect2,
+          div.greenRect3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    nav {
+      position: static;
+      ul {
+        flex-direction: column;
+        padding: 0;
+        li {
+          text-align: center;
         }
       }
     }
